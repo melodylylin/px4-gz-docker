@@ -14,7 +14,7 @@ services:
       - DISPLAY=$DISPLAY
       - RUN_VNC=false
       - SSH_AUTH_SOCK=${SSH_AUTH_SOCK}
-      - PX4_GZ_WORLD=AbuDhabi
+      - PX4_GZ_WORLD=default
       - PX4_HOME_LAT=40.41537099446224
       - PX4_HOME_LON=-86.93289541090424
       - PX4_HOME_ALT=185
@@ -47,7 +47,7 @@ services:
       - DISPLAY=$DISPLAY
       - RUN_VNC=false
       - SSH_AUTH_SOCK=${SSH_AUTH_SOCK}
-      - PX4_GZ_WORLD=AbuDhabi
+      - PX4_GZ_WORLD=default
       - PX4_HOME_LAT=40.41537099446224
       - PX4_HOME_LON=-86.93289541090424
       - PX4_HOME_ALT=185
