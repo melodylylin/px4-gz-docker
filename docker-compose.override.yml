@@ -1,16 +1,6 @@
 services:
 
-  tsunomi_1:
-
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
-
-  tsunomi_2:
+  px4_gz:
 
     deploy:
       resources:

@@ -7,7 +7,7 @@ volumes:
 
 services:
 
-  tsunomi_1:
+  px4_gz:
     environment:
       - HOST_UID=${HOST_UID}
       - HOST_GID=${HOST_GID}
@@ -27,40 +27,7 @@ services:
     tty: true
     stdin_open: true
     privileged: true
-    hostname: tsunomi1
-    sysctls:
-      - net.ipv6.conf.all.disable_ipv6=0
-    volumes:
-      - ./work:/home/user/work
-      - gz_config:/home/user/.gz
-      - /tmp/.X11-unix:/tmp/.X11-unix
-      - ${SSH_AUTH_SOCK}:${SSH_AUTH_SOCK}
-      - $HOME/gnupg:/home/user/.gnupg
-      - $HOME/.ssh:/home/user/.ssh
-      - $HOME/.gitconfig:/home/user/.gitconfig
-
-    
-  tsunomi_2:
-    environment:
-      - HOST_UID=${HOST_UID}
-      - HOST_GID=${HOST_GID}
-      - DISPLAY=$DISPLAY
-      - RUN_VNC=false
-      - SSH_AUTH_SOCK=${SSH_AUTH_SOCK}
-      - PX4_GZ_WORLD=default
-      - PX4_HOME_LAT=40.41537099446224
-      - PX4_HOME_LON=-86.93289541090424
-      - PX4_HOME_ALT=185
-      - ROS_DOMAIN_ID=2
-      - PX4_MICRODDS_NS=px4_2
-    image: tsunomi
-    # image: ${REGISTRY}/cognipilot/dream:${TAG}
-    build:
-       dockerfile: Dockerfile
-    tty: true
-    stdin_open: true
-    privileged: true
-    hostname: tsunomi2
+    hostname: px4_gz
     sysctls:
       - net.ipv6.conf.all.disable_ipv6=0
     volumes:
