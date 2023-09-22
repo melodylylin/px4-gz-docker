@@ -1,4 +1,4 @@
-# tsunomi-docker
+# px4-gz-docker
 Docker files needed to build images for px4_sitl simulation in ROS2 and Gazebo
 
 The `./work` directory setup 
