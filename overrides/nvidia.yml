@@ -1,6 +1,6 @@
 services:
 
-  tsunomi:
+  px4_gz:
 
     deploy:
       resources:
