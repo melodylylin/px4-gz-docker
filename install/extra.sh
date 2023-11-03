@@ -25,3 +25,6 @@ sudo DEBIAN_FRONTEND=noninteractive  apt-get install --no-install-recommends -y 
        	ros-humble-mavros-extras
 
 sudo pip install pykwalify
+
+wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+bash install_geographiclib_datasets.sh && rm install_geographiclib_datasets.sh
