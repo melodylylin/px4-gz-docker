@@ -20,6 +20,8 @@ sudo DEBIAN_FRONTEND=noninteractive  apt-get install --no-install-recommends -y 
 	qt5dxcb-plugin \
 	screen \
 	terminator \
-	vim
+	vim \
+	ros-humble-mavros \
+       	ros-humble-mavros-extras
 
 sudo pip install pykwalify

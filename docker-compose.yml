@@ -20,7 +20,7 @@ services:
       - PX4_HOME_ALT=185
       - ROS_DOMAIN_ID=1
       - PX4_MICRODDS_NS=px4_1
-    image: tsunomi
+    image: px4_gz
     # image: ${REGISTRY}/cognipilot/dream:${TAG}
     build:
        dockerfile: Dockerfile
