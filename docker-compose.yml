@@ -15,9 +15,6 @@ services:
       - RUN_VNC=false
       - SSH_AUTH_SOCK=${SSH_AUTH_SOCK}
       - PX4_GZ_WORLD=default
-      - PX4_HOME_LAT=40.41537099446224
-      - PX4_HOME_LON=-86.93289541090424
-      - PX4_HOME_ALT=185
       - ROS_DOMAIN_ID=1
       - PX4_MICRODDS_NS=px4_1
     image: px4_gz
